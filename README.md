@@ -13,7 +13,8 @@ Todas as distribuições razoavelmente novas já incluem hdparm na instalação 
 
 `hdparm -I /dev/sda`
 
-como administrador (Figura 1).
+Como administrador (Figura 1).
+
 [![Figura 1](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b01-hdparm1/544441-1-eng-US/b01-hdparm1_reference.jpg)]
 
 ```
