@@ -15,7 +15,7 @@ Todas as distribuições razoavelmente novas já incluem hdparm na instalação 
 
 Como administrador (Figura 1).
 
-[!(https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b01-hdparm1/544441-1-eng-US/b01-hdparm1_reference.jpg)]
+![Figura 1](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b01-hdparm1/544441-1-eng-US/b01-hdparm1_reference.jpg)
 
 ```
 Figura 1: Hdparm lista as propriedades de hardware de um disco rígido de seis anos com 320 GB de capacidade.
@@ -35,7 +35,7 @@ Para determinar a rapidez com que uma unidade entrega dados, use o
 
 comando. Após alguns segundos, a taxa de transferência de dados aparece (em megabytes por segundo, MBps). O pequeno programa lê diretamente da unidade por um tempo, independentemente do sistema de arquivos. A velocidade medida é, portanto, um pouco mais rápida do que na prática. Para receber um resultado não contaminado, nenhum outro programa deve estar em execução durante a medição, e memória principal suficiente deve estar livre. Repita a medição pelo menos três vezes e depois calcule o valor médio. Para um modelo atual, o resultado deve atingir pelo menos 80 MBps (Figura 2).
 
-[![Figura 2](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b02-hdparm3/544444-1-eng-US/b02-hdparm3_reference.jpg)]
+![Figura 2](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b02-hdparm3/544444-1-eng-US/b02-hdparm3_reference.jpg)
 ```
 Figura 2: Este disco rígido SATA atingiu uma velocidade média de leitura de 80,48 MBps.
 ```
@@ -46,7 +46,7 @@ O kernel do Linux deposita os dados recuperados do disco rígido em um buffer. P
 
 comando. O Hdparm então lê os dados diretamente do disco. Os valores medidos assim serão um pouco mais lentos do que sem --direct , mas pelo menos você pode ver a taxa de transmissão pura do disco (Figura 3).
 
-[![Figura 3](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b03-hdparm4/544447-1-eng-US/b03-hdparm4_reference.jpg)]
+![Figura 3](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b03-hdparm4/544447-1-eng-US/b03-hdparm4_reference.jpg)
 ```
 Figura 3: Sem o buffer, a taxa de transmissão cai drasticamente. No meio do disco rígido de 320 GB, mais perdas de velocidade são vistas.
 ```
@@ -85,7 +85,7 @@ Além disso, as unidades modernas podem até mesmo recuperar alguns setores com 
 
 `hdparm -a256 /dev/sda`
 
-[![Figura 4](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b04-hdparm6/544450-1-eng-US/b04-hdparm6_reference.jpg)]
+![Figura 4](https://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/b04-hdparm6/544450-1-eng-US/b04-hdparm6_reference.jpg)
 ```
 Figura 4: aqui, a leitura antecipada é definida para 256 e o ​​gerenciamento acústico está desativado no momento.
 ```
