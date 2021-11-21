@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sdb", RUN+="/usr/bin/hdparm -a 254 -m0 --yes-i-know-what-i-am-doing -M 128 -B 254 -d0 -S 0 /dev/sdb"
