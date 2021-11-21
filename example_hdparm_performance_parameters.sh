@@ -33,6 +33,11 @@ sudo su -c "
     echo
     echo -e 'Command: ${green}hdparm -d0 /dev/${device}${nc}'
     hdparm -d0 /dev/${device}
+    echo
+    echo
+    echo -e 'Command: ${green}hdparm -S /dev/${device}${nc}'
+    hdparm -S /dev/${device}
+    hdparm -S 0 /dev/${device}
     hdparm -Tt /dev/${device}
     hdparm -t --direct /dev/${device}
 "
