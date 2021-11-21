@@ -1,4 +1,3 @@
-#!/bin/bash
 export device=sdb
 green='\033[1;32m'
 nc='\033[0m' # No Color
@@ -30,6 +29,10 @@ sudo su -c "
     echo -e 'Command: ${green}hdparm -B /dev/${device}${nc}'
     hdparm -B /dev/${device}
     hdparm -B254 /dev/${device}
+    echo
+    echo
+    echo -e 'Command: ${green}hdparm -d0 /dev/${device}${nc}'
+    hdparm -d0 /dev/${device}
     hdparm -Tt /dev/${device}
     hdparm -t --direct /dev/${device}
 "
